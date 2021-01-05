@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addDiscussion } from '../actions/discussions';
 
 class DiscussionInput extends Component {
 
-  state = { topic: '' };
+  state = {
+    topic: ''
+  };
 
   handleChange = (event) => {
     this.setState({
-      topic: event.target.value
+      [event.target.name]: event.target.value
     });
   };
 
   handleSubmit = (event) => {
     event.preventDefault();
+    this.props.addDiscussion(this.state);
+    this.setState({
+      topic: ''
+    });
   };
 
   render() {
@@ -34,4 +42,4 @@ class DiscussionInput extends Component {
 }
 
 
-export default DiscussionInput;
+export default connect(null, { addDiscussion })(DiscussionInput);
