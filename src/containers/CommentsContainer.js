@@ -7,8 +7,8 @@ class CommentsContainer extends Component {
   render() {
     return (
       <div>
-        <CommentInput />
         <Comments comments={this.props.discussion && this.props.discussion.comments} />
+        <CommentInput discussion={this.props.discussion} />
       </div>
     );
   }
