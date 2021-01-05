@@ -9,7 +9,7 @@ const Discussion = (props) => {
       <h2>
         {discussion ? discussion.topic : null}
       </h2>
-      <CommentsContainer />
+      <CommentsContainer discussion={discussion} />
     </div>
   );
 };
