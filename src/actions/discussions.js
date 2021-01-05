@@ -11,10 +11,10 @@ export const fetchDiscussions = () => {
 export const addDiscussion = (data) => {
   return (dispatch) => {
     fetch('http://localhost:3000/api/v1/discussions', {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
       body: JSON.stringify(data)
     })
