@@ -1,8 +1,11 @@
 
-export default function discussionReducer(state = {
-  discussions: []
-}, action) {
+const discussionReducer = (state = { discussions: [] }, action) => {
+  switch (action.type) {
+    case 'FETCH_DISCUSSIONS':
+      return { discussions: action.payload };
+    default:
+      return state;
+  }
+};
 
-  return state;
-
-}
+export default discussionReducer;
