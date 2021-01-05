@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchDiscussions } from '../actions/fetchDiscussions';
+import { fetchDiscussions } from '../actions/discussions';
 import DiscussionInput from '../components/DiscussionInput';
 import Discussions from '../components/Discussions';
 
