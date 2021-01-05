@@ -2,7 +2,6 @@ import React from 'react';
 import CommentsContainer from '../containers/CommentsContainer';
 
 const Discussion = (props) => {
-
   const discussion = props.discussions.filter(discussion => discussion.id == props.match.params.id)[0];
 
   return (

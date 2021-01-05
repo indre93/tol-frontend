@@ -34,7 +34,7 @@ class DiscussionInput extends Component {
             value={this.state.topic}
             onChange={this.handleChange}
           />
-          <input type="submit" />
+          <input type='submit' />
         </form>
       </div>
     );

@@ -4,6 +4,26 @@ import { addComment } from '../actions/comments';
 
 class CommentInput extends Component {
 
+  state = {
+    username: '',
+    content: ''
+  };
+
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    this.props.addComment(this.state, this.props.discussion.id);
+    this.setState({
+      username: '',
+      content: ''
+    });
+  };
+
   render() {
     return (
       <div>
