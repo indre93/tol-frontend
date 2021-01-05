@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 
 class DiscussionInput extends Component {
+
+  state = { topic: '' };
+
+  handleChange = (event) => {
+    this.setState({
+      topic: event.target.value
+    });
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   render() {
     return (
       <div>
