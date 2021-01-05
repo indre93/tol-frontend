@@ -5,9 +5,9 @@ const Discussion = (props) => {
 
   return (
     <div>
-      <li>
+      <h2>
         {discussion ? discussion.topic : null}
-      </li>
+      </h2>
     </div>
   );
 };
