@@ -1,4 +1,6 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
+
 import CommentsContainer from '../../containers/CommentsContainer';
 
 const Discussion = (props) => {
@@ -7,7 +9,7 @@ const Discussion = (props) => {
   return (
     <div>
       <h2>
-        {discussion ? discussion.topic : null}
+        {discussion ? discussion.topic : <Redirect to='/discussions' />}
       </h2>
       <CommentsContainer discussion={discussion} />
     </div>
