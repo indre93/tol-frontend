@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 import CommentsContainer from '../../containers/CommentsContainer';
 
 const Discussion = (props) => {
-  const discussion = props.discussions.filter(discussion => discussion.id == props.match.params.id)[0];
+  const discussion = props.discussions[props.match.params.id - 1];
 
   return (
     <div>
