@@ -1,0 +1,38 @@
+.jumbotron {
+  margin: 0;
+  background-image: url(../school_of_athens.jpg);
+  background-position: center;
+  background-size: cover;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  /* height: 80vh;
+  width: 100%; */
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  .jumbotron {
+    left: 50%;
+    margin-left: -512px;
+    /* 50% */
+  }
+}
+
+.mainText {
+  padding: 25px;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
