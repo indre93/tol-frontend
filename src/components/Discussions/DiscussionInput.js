@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addDiscussion } from '../actions/discussions';
+import { addDiscussion } from '../../actions/discussions';
 
 class DiscussionInput extends Component {
 
@@ -40,6 +40,5 @@ class DiscussionInput extends Component {
     );
   }
 }
-
 
 export default connect(null, { addDiscussion })(DiscussionInput);

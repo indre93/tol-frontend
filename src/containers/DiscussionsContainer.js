@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import { fetchDiscussions } from '../actions/discussions';
-import DiscussionInput from '../components/DiscussionInput';
-import Discussions from '../components/Discussions';
-import Discussion from '../components/Discussion';
+import Discussion from '../components/Discussions/Discussion';
+import DiscussionInput from '../components/Discussions/DiscussionInput';
+import Discussions from '../components/Discussions/Discussions';
 
 class DiscussionsContainer extends Component {
 
