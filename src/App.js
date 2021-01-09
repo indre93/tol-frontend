@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import DiscussionsContainer from './containers/DiscussionsContainer';
+import { Route } from 'react-router-dom';
+import Home from './components/Home';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App" >
-        <DiscussionsContainer />
+        <Route path="/">
+          <Home />
+        </Route>
       </div>
     );
   }
