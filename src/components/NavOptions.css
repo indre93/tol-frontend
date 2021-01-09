@@ -1,9 +1,7 @@
 .navButtons {
   padding: 20px;
-  background-image: url(../marble3.jpg);
+  background-image: url(../nav-bakcground.jpg);
   width: 100%;
-  position: fixed;
-  bottom: 0;
 }
 
 .navButtons a {
