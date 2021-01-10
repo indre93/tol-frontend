@@ -15,8 +15,7 @@
     border-style: hidden;
     font-family: 'Philosopher', sans-serif;
     padding: 0.5rem 3rem;
-    font-size: 20px;
-    text-transform: uppercase;
+    font-size: 25px;
 }
 
 .btn-outline-light.focus, .btn-outline-light:focus {

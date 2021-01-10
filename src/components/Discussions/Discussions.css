@@ -16,13 +16,14 @@
 }
 
 .card {
-    background-image: url(../../images/marble2.jpg);
+    padding-inline: 10px;
+    background-image: url(../../images/marble.jpg);
     background-position: center;
     background-size: cover;
     box-shadow: inset 15px 20px 2px 1px rgba(71, 65, 59, 0.32), inset -15px -20px 2px 1px rgba(71, 65, 59, 0.32);
 }
 
 .text-muted {
-    color: #3e464e!important;
+    color: #3f454a!important;
     font-weight: 600;
 }
