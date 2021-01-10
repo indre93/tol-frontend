@@ -14,3 +14,12 @@
 .headerText h1 {
     font-size: 55px;
 }
+
+.headerText h1, .headerText p {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(../images/white-marble.jpg);
+    background-position: center;
+    background-size: cover;
+}
