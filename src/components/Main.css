@@ -1,13 +1,7 @@
 .jumbotron {
   margin: 0;
-  background-image: url(../main-background.jpg);
-  background-position: center;
-  background-size: cover;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  padding: 0rem 0rem;
+  background-color: transparent;
 }
 
 .mainText {
