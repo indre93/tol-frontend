@@ -1,0 +1,18 @@
+.DiscussionsContainer {
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 20px;
+    color: rgb(120, 66, 8);
+    width: fit-content;
+}
+
+.DiscussionsContainer a {
+    color: rgb(120, 66, 8)
+}
+
+.card {
+    background-image: url(../../images/marble.jpg);
+    background-position: center;
+    background-size: cover;
+}
