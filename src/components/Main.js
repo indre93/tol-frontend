@@ -7,13 +7,12 @@ const Main = () => {
   return (
     <div>
       <Jumbotron fluid>
-        <div className="mainText">
+        <div className="headerText">
           <h1>Welcome to TOL</h1>
-          <p>A place where you can share your thoughts, connect with others, and discuss various topics</p>
+          <p>A place where you can connect with others, share your thoughts, and discuss various topics</p>
         </div>
+        <NavOptions />
       </Jumbotron>
-
-      <NavOptions />
     </div>
   );
 };
