@@ -1,10 +1,16 @@
 .jumbotron {
-  margin: 0;
-  padding: 0rem 0rem;
-  background-color: transparent;
+    margin: 0;
+    padding: 0rem 0rem;
+    width: 100%;
+    background-color: transparent;
 }
 
 .headerText {
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
+    text-align: start;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.headerText h1 {
+    font-size: 55px;
 }
