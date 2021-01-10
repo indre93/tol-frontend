@@ -1,19 +1,19 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-
+import './Discussion.css';
 import CommentsContainer from '../../containers/CommentsContainer';
 
 const Discussion = (props) => {
-  const discussion = props.discussions[props.match.params.id - 1];
+    const discussion = props.discussions[props.match.params.id - 1];
 
-  return (
-    <div>
-      <h2>
-        {discussion ? discussion.topic : <Redirect to='/discussions' />}
-      </h2>
-      <CommentsContainer discussion={discussion} />
-    </div>
-  );
+    return (
+        <div>
+            <h2>
+                {discussion ? discussion.topic : <Redirect to='/discussions' />}
+            </h2>
+            <CommentsContainer discussion={discussion} />
+        </div>
+    );
 };
 
 export default Discussion;
