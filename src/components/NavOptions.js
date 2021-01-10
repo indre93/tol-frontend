@@ -7,7 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 const NavOptions = () => {
     return (
         <div className="navButtons">
-            <Nav justify variant="pills" >
+            <Nav fill variant="pills" >
                 <Nav.Item>
                     <NavLink to='/'>
                         <Button variant="outline-light" size="lg">Home</Button>
@@ -22,7 +22,7 @@ const NavOptions = () => {
 
                 <Nav.Item>
                     <NavLink to='/discussions/new'>
-                        <Button variant="outline-light" size="lg">Add New Discussion</Button>
+                        <Button variant="outline-light" size="lg">Start Discussion</Button>
                     </NavLink>
                 </Nav.Item>
             </Nav>
