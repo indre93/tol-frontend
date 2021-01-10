@@ -19,7 +19,7 @@ const Discussions = (props) => {
                                 {discussion.topic}
                             </Link>
                         </Card.Title>
-                        <Card.Subtitle className="text-muted">
+                        <Card.Subtitle className="mb-3 text-muted">
                             {discussion.comments.length} Comment(s)
                     </Card.Subtitle>
                     </Card.Body>
