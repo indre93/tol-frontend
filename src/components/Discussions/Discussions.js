@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Discussions.css';
+import Card from 'react-bootstrap/Card';
 
 const Discussions = (props) => {
   return (
