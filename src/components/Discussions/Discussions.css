@@ -1,18 +1,28 @@
 .DiscussionsContainer {
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    padding: 20px;
-    color: rgb(120, 66, 8);
+    margin: 15px;
+    padding: 30px;
+    color: rgb(103, 53, 0);
     width: fit-content;
 }
 
 .DiscussionsContainer a {
-    color: rgb(120, 66, 8)
+    color: #673500;
+    font-weight: 600;
+}
+
+.DiscussionsContainer h2 {
+    font-weight: 600;
+    margin-bottom: 25px;
 }
 
 .card {
-    background-image: url(../../images/marble.jpg);
+    background-image: url(../../images/marble2.jpg);
     background-position: center;
     background-size: cover;
+    box-shadow: inset 15px 20px 2px 1px rgba(71, 65, 59, 0.32), inset -15px -20px 2px 1px rgba(71, 65, 59, 0.32);
+}
+
+.text-muted {
+    color: #3e464e!important;
+    font-weight: 600;
 }
