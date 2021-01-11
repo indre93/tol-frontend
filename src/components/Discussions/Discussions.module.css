@@ -1,6 +1,5 @@
 .DiscussionsContainer {
-    margin: 15px;
-    padding: 30px;
+    margin: 45px;
     color: rgb(103, 53, 0);
     width: fit-content;
 }
@@ -23,7 +22,7 @@
     box-shadow: inset 15px 20px 2px 1px rgba(71, 65, 59, 0.32), inset -15px -20px 2px 1px rgba(71, 65, 59, 0.32);
 }
 
-.text-muted {
+.textMuted {
     color: #3f454a!important;
     font-weight: 600;
 }
