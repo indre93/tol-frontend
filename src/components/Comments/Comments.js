@@ -1,5 +1,6 @@
 import React from 'react';
 import { datePosted } from '../FormatCreatedAt';
+import style from './Comments.module.css';
 
 const Comments = (props) => {
     return (
