@@ -1,28 +1,27 @@
-.DiscussionsContainer {
-    margin: 45px;
-    color: rgb(103, 53, 0);
-    width: fit-content;
-}
-
-.DiscussionsContainer a {
-    color: #673500;
-    font-weight: 600;
-}
-
-.DiscussionsContainer h2 {
-    font-weight: 600;
-    margin-bottom: 25px;
-}
-
-.card {
-    padding-inline: 10px;
+.cardContainer {
+    margin: 40px;
+    color: #28292a;
     background-image: url(../../images/marble.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: inset 15px 20px 2px 1px rgba(71, 65, 59, 0.32), inset -15px -20px 2px 1px rgba(71, 65, 59, 0.32);
+    border-radius: 15px;
+}
+
+.cardContainer h2 {
+    padding: 20px;
+    background-color: rgba(133, 81, 32, 0.333);
+    box-shadow: inset 10px 10px 1px 1px rgba(71, 65, 59, 0.218), inset -10px -10px 1px 1px rgba(71, 65, 59, 0.251);
+    border: 0;
+}
+
+.cardBody {
+    border-bottom: 1px inset rgba(0, 0, 0, .125);
+}
+
+.cardBody a {
+    color: rgb(103, 53, 0);
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .textMuted {
-    color: #3f454a!important;
-    font-weight: 600;
+    color: #28292a!important;
 }
