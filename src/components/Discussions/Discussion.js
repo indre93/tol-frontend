@@ -1,7 +1,8 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import './Discussion.css';
 import CommentsContainer from '../../containers/CommentsContainer';
+import style from './Discussion.module.css';
+import Card from 'react-bootstrap/Card';
 
 const Discussion = (props) => {
     const discussion = props.discussions[props.match.params.id - 1];
