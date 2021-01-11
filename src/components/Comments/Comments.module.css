@@ -1,0 +1,36 @@
+.comments {
+    padding: 20px;
+    color: rgb(103, 53, 0);
+    border-bottom: 1px inset rgba(0, 0, 0, .125);
+}
+
+.CommentContainer {
+    font-size: 15px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.66);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.347);
+    margin-block: 15px;
+    max-width: 500px;
+}
+
+.cardHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 7px;
+    color: #696f75;
+    background-color: rgba(255, 255, 255, 0.463);
+}
+
+.username {
+    text-align: start;
+}
+
+.postedTime {
+    font-family: 'Philosopher', sans-serif;
+    text-align: end;
+}
+
+.cardBody {
+    padding: 10px;
+}
