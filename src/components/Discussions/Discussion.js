@@ -10,7 +10,7 @@ const Discussion = (props) => {
     return (
         <div className={style.DiscussionContainer}>
             <Card className={style.card}>
-                <Card.Header as="h3" className="mb-2">
+                <Card.Header as="h3">
                     {discussion ? discussion.topic : <Redirect to='/discussions' />}
                 </Card.Header>
                 <Card.Body>
