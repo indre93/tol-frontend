@@ -13,7 +13,9 @@ const Discussion = (props) => {
                 <Card.Header as="h3" className="mb-2">
                     {discussion ? discussion.topic : <Redirect to='/discussions' />}
                 </Card.Header>
-                <CommentsContainer discussion={discussion} />
+                <Card.Body>
+                    <CommentsContainer discussion={discussion} />
+                </Card.Body>
             </Card>
         </div>
     );
