@@ -1,6 +1,7 @@
 import React from 'react';
 import { datePosted } from '../FormatCreatedAt';
 import style from './Comments.module.css';
+import Card from 'react-bootstrap/Card';
 
 const Comments = (props) => {
     return (
