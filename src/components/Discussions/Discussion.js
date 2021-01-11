@@ -8,11 +8,13 @@ const Discussion = (props) => {
     const discussion = props.discussions[props.match.params.id - 1];
 
     return (
-        <div>
-            <h2>
-                {discussion ? discussion.topic : <Redirect to='/discussions' />}
-            </h2>
-            <CommentsContainer discussion={discussion} />
+        <div className={style.DiscussionContainer}>
+            <Card className={style.card}>
+                <Card.Header as="h3" className="mb-2">
+                    {discussion ? discussion.topic : <Redirect to='/discussions' />}
+                </Card.Header>
+                <CommentsContainer discussion={discussion} />
+            </Card>
         </div>
     );
 };
