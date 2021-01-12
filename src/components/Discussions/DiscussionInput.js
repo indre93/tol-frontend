@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addDiscussion } from '../../actions/discussions';
-import './DiscussionInput.css';
+import Form from 'react-bootstrap/Form';
+import style from './DiscussionInput.module.css';
 
 class DiscussionInput extends Component {
 
