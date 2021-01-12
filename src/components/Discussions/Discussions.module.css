@@ -1,5 +1,6 @@
 .card {
-    height: 65vh;
+    height: 500px;
+    width: 700px;
     margin-block: 40px;
     border-radius: 15px;
     padding-top: 25px;
@@ -28,11 +29,10 @@
     padding-inline: 25px;
     padding-block: 10px;
     text-align: left;
-    max-block-size: auto;
     overflow-y: auto;
     border-radius: 7px;
     border-block: 3px ridge rgba(79, 44, 6, 0.347);
-    background-color: rgba(211, 189, 163, 0.238);
+    background-color: rgba(211, 189, 163, 0.551);
 }
 
 .cardContent {
@@ -67,14 +67,12 @@
 .cardBody::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
-    background-color: #F5F5F5;
     border-radius: 10px;
 }
 
 .cardBody::-webkit-scrollbar {
     width: 8px;
     border-radius: 10px;
-    background-color: #F5F5F5;
 }
 
 .cardBody::-webkit-scrollbar-thumb {

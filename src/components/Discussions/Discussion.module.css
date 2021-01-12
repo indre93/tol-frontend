@@ -1,16 +1,19 @@
 .DiscussionContainer {
-    margin: 45px;
-}
-
-.DiscussionContainer h3 {
-    color: rgb(103, 53, 0);
-    font-weight: 600;
+    margin-block: 40px;
+    height: 500px;
+    width: 700px;
 }
 
 .card {
     padding: 20px;
+    border-radius: 15px;
     background-image: url(../../images/marble.jpg);
     background-position: center;
     background-size: cover;
     box-shadow: inset 15px 20px 2px 1px rgba(71, 65, 59, 0.32), inset -15px -20px 2px 1px rgba(71, 65, 59, 0.32);
+}
+
+.card h3 {
+    color: rgb(103, 53, 0);
+    font-weight: 600;
 }
