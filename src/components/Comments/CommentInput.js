@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { addComment } from '../../actions/comments';
 import style from './CommentInput.module.css';
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 class CommentInput extends Component {
 
@@ -39,7 +40,9 @@ class CommentInput extends Component {
                         onChange={this.handleChange}
                         required
                     />
-                    <button className={style.formBtn} type="submit">Submit</button>
+                    <Button variant="outline-dark" type="submit">
+                        Submit
+                    </Button>
                 </Form>
             </div>
         );
