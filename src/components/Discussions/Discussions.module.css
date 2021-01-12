@@ -30,8 +30,8 @@
     padding-block: 10px;
     text-align: left;
     overflow-y: auto;
-    border-radius: 7px;
-    border-block: 3px ridge rgba(79, 44, 6, 0.347);
+    border-radius: 2px;
+    border-block: 1px solid rgb(172, 142, 103);
     background-color: rgba(211, 189, 163, 0.551);
 }
 
@@ -73,9 +73,10 @@
 .cardBody::-webkit-scrollbar {
     width: 8px;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.408);
 }
 
 .cardBody::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: rgb(79, 44, 6);
+    background-color: rgb(157, 121, 74);
 }
