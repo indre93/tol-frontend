@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addDiscussion } from '../../actions/discussions';
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 import style from './DiscussionInput.module.css';
 
 class DiscussionInput extends Component {
 
     state = {
-        topic: ''
+        topic: ""
     };
 
     handleChange = (event) => {
@@ -20,24 +21,30 @@ class DiscussionInput extends Component {
         event.preventDefault();
         this.props.addDiscussion(this.state);
         this.setState({
-            topic: ''
+            topic: ""
         });
     };
 
     render() {
         return (
-            <div>
-                <h1>Start a New Discussion</h1>
-                <form onSubmit={this.handleSubmit}>
-                    <label>Topic: </label>
-                    <input
-                        type='text'
-                        name='topic'
+            <div className={style.formContainer}>
+                <h2>Start a New Discussion</h2>
+                <Form onSubmit={this.handleSubmit} className={style.form}>
+                    <Form.Label as="h3">Topic:</Form.Label>
+                    <Form.Control
+                        as="textarea"
+                        rows={5}
+                        type="text"
+                        name="topic"
+                        className={style.formInput}
                         value={this.state.topic}
                         onChange={this.handleChange}
+                        required
                     />
-                    <input type='submit' />
-                </form>
+                    <Button variant="outline-dark" size="lg" type="submit">
+                        Submit
+                    </Button>
+                </Form>
             </div>
         );
     }
