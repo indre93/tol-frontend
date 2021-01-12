@@ -1,27 +1,83 @@
-.cardContainer {
-    margin: 40px;
-    color: #28292a;
-    background-image: url(../../images/marble.jpg);
+.card {
+    height: 65vh;
+    margin-block: 40px;
     border-radius: 15px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    background-image: url(../../images/marble.jpg);
+    box-shadow: inset 15px 20px 2px 1px rgba(71, 65, 59, 0.32), inset -15px -20px 2px 1px rgba(71, 65, 59, 0.32);
 }
 
-.cardContainer h2 {
-    padding: 20px;
+.cardHeader {
+    padding-inline: 25px;
+    border: none;
+}
+
+.cardHeader h2 {
+    margin: 0;
+    padding-block: 20px;
+    border-radius: 15px;
+    color: rgb(103, 53, 0);
+    font-weight: 600;
     background-color: rgba(133, 81, 32, 0.333);
     box-shadow: inset 10px 10px 1px 1px rgba(71, 65, 59, 0.218), inset -10px -10px 1px 1px rgba(71, 65, 59, 0.251);
-    border: 0;
 }
 
 .cardBody {
-    border-bottom: 1px inset rgba(0, 0, 0, .125);
+    margin-inline: 30px;
+    padding-inline: 25px;
+    padding-block: 10px;
+    text-align: left;
+    max-block-size: auto;
+    overflow-y: auto;
+    border-radius: 7px;
+    border-block: 3px ridge rgba(79, 44, 6, 0.347);
+    background-color: rgba(211, 189, 163, 0.238);
+}
+
+.cardContent {
+    border-block: 1px inset rgba(0, 0, 0, .125);
 }
 
 .cardBody a {
-    color: rgb(103, 53, 0);
+    margin: 0;
     font-size: 20px;
-    font-weight: 600;
+    color: #28292a;
+    padding-left: 5px;
 }
 
-.textMuted {
-    color: #28292a!important;
+.cardDate {
+    margin: 0;
+    padding: 5px;
+    text-align: right;
+    font-size: 14px;
+    color: #3c3d3e!important;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.cardCommentAmnt {
+    margin: 0;
+    font-size: 14px;
+    color: #3c3d3e!important;
+    font-family: 'Philosopher', sans-serif;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.cardBody::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.cardBody::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.cardBody::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(79, 44, 6);
 }

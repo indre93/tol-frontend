@@ -6,25 +6,26 @@ import Card from 'react-bootstrap/Card';
 
 const Discussions = (props) => {
     return (
-        <Card className={style.cardContainer}>
-            <Card.Header>
+        <Card className={style.card}>
+            <Card.Header className={style.cardHeader}>
                 <h2>Discussion Topics</h2>
             </Card.Header>
-            {props.discussions.map(discussion =>
-                <div key={discussion.id} className={`mb-2 ${style.card}`}>
-                    <Card.Body className={style.cardBody}>
-                        <Card.Subtitle variant="top" className={`mb-2 ${style.textMuted}`}>
+
+            <Card.Body className={style.cardBody}>
+                {props.discussions.map(discussion =>
+                    <div key={discussion.id} className={style.cardContent}>
+                        <Card.Subtitle variant="top" className={style.cardDate}>
                             {datePosted(discussion.created_at)}
                         </Card.Subtitle>
                         <Card.Title>
                             <Link to={`/discussions/${discussion.id}`}>{discussion.topic}</Link>
                         </Card.Title>
-                        <Card.Subtitle className={` ${style.textMuted}`}>
+                        <Card.Subtitle className={style.cardCommentAmnt}>
                             {discussion.comments.length} Comment(s)
                         </Card.Subtitle>
-                    </Card.Body>
-                </div>
-            )}
+                    </div>
+                )}
+            </Card.Body>
         </Card>
     );
 };
