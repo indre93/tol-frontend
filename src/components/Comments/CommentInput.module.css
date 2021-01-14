@@ -1,11 +1,10 @@
 .formContainer {
-    border-top: 1px inset rgba(0, 0, 0, .125);
     margin-inline: 5px;
-    margin-bottom: 20px;
+    margin-block: 15px;
 }
 
 .formInput {
     text-align: center;
-    margin-block: 15px;
+    margin-block: 20px;
     font-size: 17px;
 }

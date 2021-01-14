@@ -5,10 +5,10 @@ import Card from 'react-bootstrap/Card';
 
 const Comments = (props) => {
     return (
-        <div className={style.comments}>
+        <div className={style.container}>
             {props.comments && props.comments.map(comment =>
-                <div key={comment.id} className={style.CommentContainer}>
-                    <Card.Header className={style.cardHeader}>
+                <div key={comment.id} className={style.comment}>
+                    <Card.Header className={style.commentHeader}>
                         <strong className={style.username}>{comment.username}</strong>
                         <small className={style.postedTime}>{datePosted(comment.created_at)}</small>
                     </Card.Header>
