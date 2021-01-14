@@ -2,31 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { datePosted } from '../FormatCreatedAt';
 import style from './Discussions.module.css';
-import Card from 'react-bootstrap/Card';
 
 const Discussions = (props) => {
     return (
-        <Card className={style.card}>
-            <Card.Header className={style.cardHeader}>
-                <h2>Discussion Topics</h2>
-            </Card.Header>
+        <div className={style.container}>
+            <h2>Discussion Topics</h2>
 
-            <Card.Body className={style.cardBody}>
+            <div className={style.containerBody}>
                 {props.discussions.map(discussion =>
-                    <div key={discussion.id} className={style.cardContent}>
-                        <Card.Subtitle variant="top" className={style.cardDate}>
+                    <div key={discussion.id} className={style.bodyContent}>
+                        <div className={style.containerDate}>
                             {datePosted(discussion.created_at)}
-                        </Card.Subtitle>
-                        <Card.Title>
+                        </div>
+                        <div>
                             <Link to={`/discussions/${discussion.id}`}>{discussion.topic}</Link>
-                        </Card.Title>
-                        <Card.Subtitle className={style.cardCommentAmnt}>
+                        </div>
+                        <div className={style.containerComments}>
                             {discussion.comments.length} Comment(s)
-                        </Card.Subtitle>
+                        </div>
                     </div>
                 )}
-            </Card.Body>
-        </Card>
+            </div>
+        </div>
     );
 };
 
