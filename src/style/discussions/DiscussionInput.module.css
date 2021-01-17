@@ -1,0 +1,28 @@
+.formContainer {
+  height: 500px;
+  width: 700px;
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 15px;
+  color: rgb(103, 53, 0);
+  background-image: url(../images/marble.jpg);
+  box-shadow: inset 15px 20px 2px 1px rgba(71, 65, 59, 0.32), inset -15px -20px 2px 1px rgba(71, 65, 59, 0.32);
+}
+
+.formContainer h2 {
+  margin-top: 5px;
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: 600;
+  background-color: rgba(133, 81, 32, 0.333);
+  box-shadow: inset 10px 10px 1px 1px rgba(71, 65, 59, 0.218), inset -10px -10px 1px 1px rgba(71, 65, 59, 0.251);
+}
+
+.form {
+  align-self: center;
+  padding: 20px;
+}
+
+.formInput {
+  margin-block: 35px;
+}
