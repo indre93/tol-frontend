@@ -1,6 +1,7 @@
 .container {
   height: 275px;
   margin: 4px;
+  padding-block: 5px;
   color: rgb(103, 53, 0);
   background-color: rgba(221, 212, 202, 0.694);
   border-radius: 15px;
@@ -8,6 +9,9 @@
   border-color: burlywood;
   border-right: none;
   overflow-y: auto;
+  overflow-wrap: break-word;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y proximity;
 }
 
 .comment {
@@ -15,8 +19,10 @@
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.66);
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.347);
-  margin: 10px;
-  max-width: 500px;
+  margin-inline: 10px;
+  margin-block: 5px;
+  width: 400px;
+  float: left;
 }
 
 .commentHeader {
@@ -39,8 +45,18 @@
 }
 
 .cardBody {
-  padding: 10px;
+  padding-inline: 10px;
+  padding-block: 3px;
   text-align: start;
+}
+
+.container>.comment:last-child {
+  scroll-snap-align: end;
+  scroll-margin-block-end: 10px;
+}
+
+.container>.comment:nth-child(2n) {
+  float: right;
 }
 
 .container::-webkit-scrollbar-track {

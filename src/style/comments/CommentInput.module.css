@@ -1,10 +1,10 @@
 .formContainer {
   margin-inline: 5px;
-  margin-block: 15px;
+  margin-block: 17.5px;
 }
 
 .formInput {
   text-align: center;
-  margin-block: 20px;
+  margin-bottom: 20px;
   font-size: 17px;
 }
