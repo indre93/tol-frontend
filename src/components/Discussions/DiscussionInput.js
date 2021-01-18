@@ -43,7 +43,7 @@ class DiscussionInput extends Component {
           />
           <Button variant="outline-dark" size="lg" type="submit">
             Submit
-                    </Button>
+          </Button>
         </Form>
       </div>
     );
