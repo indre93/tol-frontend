@@ -8,46 +8,61 @@ import Col from 'react-bootstrap/Col';
 
 class CommentInput extends Component {
 
-    state = {
-        username: "",
-        content: ""
-    };
+  state = {
+    username: "",
+    content: ""
+  };
 
-    handleChange = (event) => {
-        this.setState({
-            [event.target.name]: event.target.value
-        });
-    };
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  };
 
-    handleSubmit = (event) => {
-        event.preventDefault();
-        this.props.addComment(this.state, this.props.discussion.id);
-        this.setState({
-            username: "",
-            content: ""
-        });
-    };
+  handleSubmit = (event) => {
+    event.preventDefault();
+    this.props.addComment(this.state, this.props.discussion.id);
+    this.setState({
+      username: "",
+      content: ""
+    });
+  };
 
-    render() {
-        return (
-            <div className={style.formContainer}>
-                <Form onSubmit={this.handleSubmit}>
-                    <Form.Control
-                        type="text"
-                        name="content"
-                        placeholder="Enter comment"
-                        className={style.formInput}
-                        value={this.state.content}
-                        onChange={this.handleChange}
-                        required
-                    />
-                    <Button variant="outline-dark" type="submit">
-                        Submit
-                    </Button>
-                </Form>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className={style.formContainer}>
+        <Form onSubmit={this.handleSubmit}>
+          <Form.Row>
+            <Col>
+              <Form.Control
+                type="text"
+                name="username"
+                placeholder="Enter username"
+                className={style.formInput}
+                value={this.state.username}
+                onChange={this.handleChange}
+                required
+              />
+            </Col>
+            <Col xs={8}>
+              <Form.Control
+                type="text"
+                name="content"
+                placeholder="Enter comment"
+                className={style.formInput}
+                value={this.state.content}
+                onChange={this.handleChange}
+                required
+              />
+            </Col>
+          </Form.Row>
+          <Button variant="outline-dark" type="submit">
+            Submit
+          </Button>
+        </Form>
+      </div>
+    );
+  }
 }
 
 export default connect(null, { addComment })(CommentInput);
