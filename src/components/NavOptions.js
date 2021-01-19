@@ -6,27 +6,18 @@ import Nav from 'react-bootstrap/Nav';
 
 const NavOptions = () => {
   return (
-    <div className="navButtons">
-      <Nav justify variant="pills">
-        <Nav.Item>
-          <NavLink to='/'>
-            <Button variant="outline-light" size="lg">Home</Button>
-          </NavLink>
-        </Nav.Item>
-
-        <Nav.Item>
-          <NavLink to='/discussions'>
-            <Button variant="outline-light" size="lg">All Discussions</Button>
-          </NavLink>
-        </Nav.Item>
-
-        <Nav.Item>
-          <NavLink to='/discussions/new'>
-            <Button variant="outline-light" size="lg">Start Discussion</Button>
-          </NavLink>
-        </Nav.Item>
-      </Nav>
-    </div>
+    <Navbar expand="lg" variant="dark">
+      <Navbar.Brand>
+        <NavLink to="/">TOL</NavLink>
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav>
+          <NavLink to="/discussions">All Discussions</NavLink>
+          <NavLink to="/discussions/new">Start New Discussion</NavLink>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
