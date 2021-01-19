@@ -1,0 +1,10 @@
+.container {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.container img {
+  height: 100vh;
+  padding-block: 95px;
+}
