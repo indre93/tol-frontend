@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/NavOptions.css';
 import { NavLink } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
+import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 const NavOptions = () => {
